@@ -158,8 +158,6 @@ main img {
 aside {
     display: block;
     background-color: var(--cor2);
-    min-width: 220px;
-    max-width: 800px;
     padding: 10px;
     margin: auto;
     border-radius: 10px;
