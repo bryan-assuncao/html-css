@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Android;
+    src: url(fontes/idroid.otf);
+}
+
+:root {
+    --cor0: #fff;
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #158447;
+    --cor4: #18472c;
+
+    --fonte-padrao: "Arial", "Verdana", "Helvetica", "sans-serif";
+    --fonte-destaque: "Bebas Neue", cursive;
+    --fonte-android: Android;
+}
+
+/*               GERAL               */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+a {
+    text-decoration: none;
+}
+
+strong, strong a {
+    color: var(--cor4);
+}
+
+strong a::after {
+    content: '🔗';
+}
+
+strong a:hover {
+    color: dodgerblue;
+}
+
+/*                 HEADER            */
+
+header {
+    background-color: var(--cor3);
+    min-height: 130px;
+    padding-top: 20px;
+    text-align: center;
+    background-image: linear-gradient(var(--cor3), var(--cor4));
+}
+
+header > h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    color: var(--cor0);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0px black;
+}
+
+header > p {
+    font-size: 1.1em;
+
+    max-width: 500px;  /*lembrar */
+    margin: auto;     /*lembrar */
+    padding: 0px 10px 20px 10px;
+
+    color: var(--cor0);
+    text-shadow: 2px 2px 0px black;
+}
+
+/* NAV */
+
+nav {
+    background-color:var(--cor4);
+    padding-bottom: 8px;
+    box-shadow: 0px 2px 2px black;
+}
+
+nav > a {
+    color: var(--cor0);
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    border-radius: 5px;
+}
+
+/*                  MAIN                 */
+
+main {
+    background-color: var(--cor0);
+    min-width: 320px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(18, 18, 18);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor4);
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 5px;
+}
+main h1, h2 {
+    font-family: var(--fonte-android);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main img {
+    width: 100%;
+}
+
+.android-pequeno {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.ytb {
+    background-color: var(--cor4);
+    margin: 0px -20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ytb > iframe {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* ASIDE  */
+
+aside {
+    background-color: var(--cor2);
+    min-width: 320px;
+    max-width: 900px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+aside > ul {
+    list-style-type: '\002714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    font-weight: bold;
+    color: var(--cor0);
+    background-color: var(--cor4);
+    padding: 5px;
+     margin: -10px -10px 0px -10px;  /* MARGEM NEGATIVA FAZ CRESCER PRA FORA */
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    padding: 5px;
+}
