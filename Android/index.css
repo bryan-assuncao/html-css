@@ -64,11 +64,9 @@ header > h1 {
 
 header > p {
     font-size: 1.1em;
-
-    max-width: 500px;  /*lembrar */
+    max-width: 600px;  /*lembrar */
     margin: auto;     /*lembrar */
     padding: 0px 10px 20px 10px;
-
     color: var(--cor0);
     text-shadow: 2px 2px 0px black;
 }
@@ -77,16 +75,16 @@ header > p {
 
 nav {
     background-color:var(--cor4);
-    padding-bottom: 8px;
     box-shadow: 0px 2px 2px black;
+    padding-bottom: 10px;
 }
 
 nav > a {
     color: var(--cor0);
-    padding: 5px;
     font-size: 0.8em;
     font-weight: bold;
     margin-left: 10px;
+    padding: 5px;
     transition: 0.5s;
 }
 
@@ -100,7 +98,7 @@ nav > a:hover {
 
 main {
     background-color: var(--cor0);
-    min-width: 320px;
+    min-width: 250px;
     max-width: 900px;
     margin: auto;
     margin-bottom: 30px;
@@ -113,6 +111,13 @@ main {
 main h1 {
     color: var(--cor4);
 }
+
+@media (max-width: 320px) {
+    main h1, main h2 {
+        font-size: 1.3em;
+    }
+
+} 
 
 main h2 {
     background-image: linear-gradient(to right, var(--cor1), transparent);
